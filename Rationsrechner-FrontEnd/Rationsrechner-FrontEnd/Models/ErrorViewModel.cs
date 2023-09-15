@@ -1,4 +1,4 @@
-namespace Rationsrechner.Models
+namespace Rationsrechner_FrontEnd.Models
 {
     public class ErrorViewModel
     {

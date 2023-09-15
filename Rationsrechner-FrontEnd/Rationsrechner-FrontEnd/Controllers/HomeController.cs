@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Rationsrechner.Models;
+using Rationsrechner_FrontEnd.Models;
 using System.Diagnostics;
 
-namespace Rationsrechner.Controllers
+namespace Rationsrechner_FrontEnd.Controllers
 {
     public class HomeController : Controller
     {
