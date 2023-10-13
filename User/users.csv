@@ -1,0 +1,6 @@
+username,password,firstname,lastname,dateofbirth,streetname,streetnumber,plz,city,company number,entitlement
+mrklhb,test123,Markus,Leonhardsberger,30.12.2002,Wiesmuellergasse,4,3240,Mank,12345678,admin
+schmirl,test1234,Stefan,Schwoediauer,29.08.2005,Altenrath,2,4432,Ernsthofen,32165487,admin
+hogmoa,test2134,Jakob,Hagmair,25.07.2005,Guggenberg,20,4551,Ried im Traunkreis,34768576,user
+buni,1234,Jakob,Fuehrer,12.07.2005,Hart,1,3250,Wieselburg-Land,12476833,user
+prem,hallo1,Jakob,Prem,09.09.2004,Siebenbrunn,5,8230,Hartberg,72462811,user
