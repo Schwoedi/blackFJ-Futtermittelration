@@ -1,0 +1,12 @@
+﻿@model DAPM_Webdesign1.Models.RationsrechnerViewModel
+
+<h2>Rationsrechner Ergebnis</h2>
+
+@if (ViewBag.TotalFutterMenge != null)
+{
+    <p>Total Futtermenge: @ViewBag.TotalFutterMenge</p>
+    <p>Phase: @Model.Phase</p>
+    <p>Anzahl Tiere: @Model.AnzahlTiere</p>
+    <p>Futtermittel: @Model.Futtermitteln</p>
+    <p>Futtermittel Menge: @Model.FuttermittelMenge</p>
+}

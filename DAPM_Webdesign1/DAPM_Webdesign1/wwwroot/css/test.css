@@ -1,0 +1,140 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-position-x: center;
+    background-image: url('../puten.jpg'); /* Hintergrundgrafik */
+    background-color: grey;
+    background-image: linear-gradient(grey, white, grey);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: grey; /* Hintergrundfarbe des Headers */
+    color: black; /* Textfarbe im Header */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+    nav li a {
+        text-decoration: none;
+        color: blue; /* Farbe für Links im Menü */
+    }
+
+        nav li a:hover {
+            color: #ffc107; /* Farbe für den Hover-Effekt */
+        }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Hintergrundfarbe des Dropdowns */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: blue; /* Farbe für Links im Dropdown */
+    }
+
+        .dropdown-content a:hover {
+            background-color: green; /* Farbe für den Hover-Effekt im Dropdown */
+        }
+
+/*Link für eine gute website- > > https://auth0.com/blog/add-authentication-aspnet-core-mvc/ */
+
+.mynavbar {
+    overflow: hidden;
+    background-color: grey;
+    color: white;
+}
+
+    .mynavbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.mydropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .mydropdown .mydropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+.mynavbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.mydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .mydropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .mydropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.mydropdown:hover .mydropdown-content {
+    display: block;
+}
+#content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+

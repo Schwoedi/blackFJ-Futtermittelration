@@ -1,0 +1,20 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Futtermittel Eingabe";
+}
+
+<h1>Futtermittel Eingabe - @Model</h1>
+
+@using (Html.BeginForm("ProcessFuttermittel", "Home"))
+{
+    for (var i = 1; i <= 7; i++)
+    {
+        <div>
+            <label>Futtermittel @i:</label>
+            <input type="text" name="futtermittel_@Model[@i]" />
+        </div>
+    }
+
+    <button type="submit">Submit</button>
+}

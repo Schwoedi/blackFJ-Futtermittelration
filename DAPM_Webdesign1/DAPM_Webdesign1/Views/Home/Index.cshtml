@@ -1,0 +1,39 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MVC Login & Registration</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to our website!</h1>
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required><br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="register-form">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" required><br>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" required><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="controller.js"></script>
+</body>
+</html>

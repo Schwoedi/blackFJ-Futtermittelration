@@ -1,0 +1,21 @@
+﻿@model DAPM_Webdesign1.Models.RationsrechnerViewModel
+
+@{
+    ViewBag.Title = "Rationsrechner Hühner";
+}
+
+<h2>Rationsrechner</h2>
+
+@using (Html.BeginForm("CalculateRation", "RationsrechnerH", FormMethod.Post))
+{
+    @Html.DropDownListFor(model => model.Phase, (IEnumerable<SelectListItem>)ViewBag.PhaseOptions, "Phase auswählen")
+    <br />
+    <p>Anzahl:
+    @Html.EditorFor(model => model.AnzahlTiere)
+    </p>
+    @Html.DropDownListFor(model => model.Futtermitteln, (IEnumerable<SelectListItem>)ViewBag.FuttermittelOptions, "Futtermittel auswählen")
+    <br />
+    @Html.EditorFor(model => model.FuttermittelMenge)
+    <br />
+    <input type="submit" value="Berechnen" />
+}
