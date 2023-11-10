@@ -1,6 +1,16 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    ViewBag.Title = "Index1";
+﻿@{
+    ViewBag.Title = "Meine Rationen";
+}
+
+<h2>Geflügel Auswahl</h2>
+
+@using (Html.BeginForm("GefluegelAuswahl", "Gefluegel", FormMethod.Post))
+{
+@*    <input type="submit" name="gefluegel" value="Huhn" />
+    <input type="submit" name="gefluegel" value="Pute" />*@
+}
+
+@using (Html.BeginForm("FutterHinzufuegen", "Gefluegel", FormMethod.Post))
+{
+    <input type="submit" value="Futterration hinzufügen" />
 }
