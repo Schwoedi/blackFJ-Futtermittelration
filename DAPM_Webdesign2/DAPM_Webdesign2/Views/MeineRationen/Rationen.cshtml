@@ -1,6 +1,62 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    ViewBag.Title = "Index1";
+﻿@{
+    ViewBag.Title = "Meine Rationen";
+}
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<h2>Geflügel Auswahl</h2>
+
+@using (Html.BeginForm("GefluegelAuswahl", "Gefluegel", FormMethod.Post))
+{
+    <div>
+        <table>
+            <tr>
+                <th>Huhn:</th>
+                <th> <a href="https://localhost:7153/MeineRationen/HuhnAuswahl1"></a>Huhnauswahl1</th>
+                
+            </tr>
+            <tr>
+                <th></th>
+                <th> <a href="https://localhost:7153/MeineRationen/HuhnAuswahl2"></a>Huhnauswahl2</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Pute:</th>
+                <th> <a href="https://localhost:7153/MeineRationen/Putenauswahl1"></a>Putenauswahl1</th>
+
+            </tr>
+            <tr>
+                <th></th>
+                <th> <a href="https://localhost:7153/MeineRationen/Putenauswahl2"></a>Putenauswahl2</th>
+            </tr>
+        </table>
+    </div>
+
+}
+
+@using (Html.BeginForm("FutterHinzufuegen", "Gefluegel", FormMethod.Post))
+{
+    <input type="submit" value="+ Futterration hinzufügen" />
 }

@@ -9,16 +9,42 @@ namespace DAPM_Webdesign2.Controllers
             return View();
         }
 
-        public IActionResult Auswahl1()
+        [HttpPost]
+        public ActionResult GefluegelAuswahl(string gefluegel)
         {
+            if (gefluegel == "Huhn")
+            {
+                return RedirectToAction("HuhnAuswahl");
+            }
+            else if (gefluegel == "Pute")
+            {
+                return RedirectToAction("PuteAuswahl");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        public ActionResult HuhnAuswahl()
+        {
+            // Logik für die Huhn-Auswahlseite
             return View();
         }
 
-        public IActionResult Auswahl2()
+        public ActionResult PuteAuswahl()
         {
+            // Logik für die Pute-Auswahlseite
             return View();
         }
 
-        // ... weitere Auswahlmöglichkeiten ...
+        // Weitere Aktionen für HuhnOption1, HuhnOption2, PuteOption1, PuteOption2
+
+        [HttpPost]
+        public ActionResult FutterHinzufuegen(string gefluegelArt)
+        {
+            // Logik zum Hinzufügen der Futterration
+            return RedirectToAction("Rationen");
+        }
     }
 }
