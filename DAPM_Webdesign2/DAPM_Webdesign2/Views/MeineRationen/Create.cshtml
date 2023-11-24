@@ -1,0 +1,17 @@
+﻿@model RationViewModel
+
+<h2>Ration erstellen</h2>
+
+@using (Html.BeginForm("Create", "Ration", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Type)
+    @Html.DropDownListFor(model => model.Type, new SelectList(Enum.GetValues(typeof(RationType))))
+
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+
+    <button type="submit">Ration erstellen</button>
+}

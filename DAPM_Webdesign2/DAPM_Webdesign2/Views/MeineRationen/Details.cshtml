@@ -1,0 +1,6 @@
+﻿@model RationDetailsViewModel
+
+<h2>@Model.Ration.Name</h2>
+<p>@Model.Ration.Type - @Model.Ration.Description</p>
+
+<a href="@Url.Action("Edit", "Ration", new { id = Model.Ration.Id })">Bearbeiten</a>

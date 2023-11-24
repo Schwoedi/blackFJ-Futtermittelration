@@ -8,6 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\FutterController.cs" />
+    <Compile Remove="Controllers\MeineRationenController.cs" />
+    <Compile Remove="Controllers\MyDBContext.cs" />
+    <Compile Remove="Controllers\RationController.cs" />
+    <Compile Remove="Views\MeineRationen\Index.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\MeineRationen\Auswahl2.cshtml" />
+    <Content Remove="Views\MeineRationen\GefluegelAuswahl.cshtml" />
+    <Content Remove="Views\MeineRationen\HuhnAuswahl1.cshtml" />
+    <Content Remove="Views\MeineRationen\Index.razor" />
+    <Content Remove="Views\MeineRationen\PutenAuswahl1.cshtml" />
+    <Content Remove="Views\MeineRationen\Rationen - Copy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.19" />
