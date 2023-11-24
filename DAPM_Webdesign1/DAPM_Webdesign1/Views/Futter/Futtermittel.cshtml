@@ -1,16 +1,12 @@
 ﻿@model string
 
 @{
-    ViewBag.Title = "Futtermittel Auswahl";
+    ViewBag.Title = "Futtermitteltabelle";
 }
 
-<h1>Futtermittel Auswahl</h1>
+<h1>Futtermitteltabelle</h1>
 
 @using (Html.BeginForm("FuttermittelEingabe", "Home"))
 {
-    <div>
-        @Html.Label("Wähle eine Option:")
-        @Html.DropDownList("selectedOption", ViewBag.Options as SelectList, "Select an option")
-        <button type="submit">Submit</button>
-    </div>
+
 }

@@ -1,0 +1,10 @@
+﻿@model EditRationViewModel
+
+<h2>Ration bearbeiten - @Model.Ration.Name</h2>
+
+<table>
+    <!-- Tabelle mit Futtermitteln -->
+    <!-- Hier kannst du JavaScript verwenden, um dynamisch Zeilen für Futtermittel hinzuzufügen und zu entfernen -->
+</table>
+
+<a href="@Url.Action("Details", "Ration", new { id = Model.Ration.Id })">Zurück zu Details</a>
