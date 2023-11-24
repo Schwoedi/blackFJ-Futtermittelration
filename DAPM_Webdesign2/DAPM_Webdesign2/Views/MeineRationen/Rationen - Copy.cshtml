@@ -22,49 +22,7 @@
     </style>
 </head>
 
-<body>
-    <!-- Index.cshtml -->
-    @model List<Ration>
-
-    <h2>Rationen</h2>
-
-    @foreach (var ration in Model)
-    {
-        <div>
-            <h3>@ration.Name</h3>
-            <p>@ration.Type - @ration.Description</p>
-            <a href="@Url.Action("Details", "Ration", new { id = ration.Id })">Details</a>
-        </div>
-    }
-
-    <a href="@Url.Action("Create", "Ration")">Ration erstellen</a>
-
-    @model RationViewModel
-
-    <h2>Ration erstellen</h2>
-
-    @using (Html.BeginForm("Create", "Ration", FormMethod.Post))
-    {
-        @Html.LabelFor(model => model.Name)
-        @Html.TextBoxFor(model => model.Name)
-    
-        @Html.LabelFor(model => model.Type)
-        @Html.DropDownListFor(model => model.Type, new SelectList(Enum.GetValues(typeof(RationType))))
-    
-        @Html.LabelFor(model => model.Description)
-        @Html.TextBoxFor(model => model.Description)
-    
-        <button type="submit">Ration erstellen</button>
-    }
-
-</body>
-
-
-
-
-
-
-@*<h2>Rationen</h2>
+<h2>Geflügel Auswahl</h2>
 
 @using (Html.BeginForm("GefluegelAuswahl", "Gefluegel", FormMethod.Post))
 {
@@ -101,4 +59,4 @@
 @using (Html.BeginForm("FutterHinzufuegen", "Gefluegel", FormMethod.Post))
 {
     <input type="submit" value="+ Futterration hinzufügen" />
-}*@
+}
