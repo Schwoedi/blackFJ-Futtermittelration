@@ -5,8 +5,8 @@ namespace DAPM_Webdesign2.Models
 {
     public class AppUser : IdentityUser
     {
-        [Key]
         public string? Password { get; set; }
+        [Key]
         public string? Email { get; set; }
         public string? firstname { get; set; }
         public string? lastname { get; set; }
